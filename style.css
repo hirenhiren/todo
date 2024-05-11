@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #588b8b;
+}
+
+.fullpage-container {
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+}
+
+.fullpage-container p.heading {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+}
+
+.form-container input[type="date"],
+.form-container input[type="time"],
+.form-container button {
+    background-color: #D0D3D4;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    cursor: pointer;
+}
+
+.form-container input[type="date"],
+.form-container input[type="time"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 6px 0;
+}
+
+#taskField {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 6px 0;
+    min-height: 100px;
+}
+
+table {
+    width: 50%;
+    margin: 0 auto 30px;
+    border-collapse: collapse;
+    background-color: #D0D3D4;
+    text-align: center;
+    border-radius: 10px;
+}
+
+table tr th {
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+table td {
+    padding: 10px;
+}

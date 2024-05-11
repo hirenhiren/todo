@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Task list for Today</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="fullpage-container">
+    <p class="heading">Todo Task list for Today</p>
+    <div class="form-container">
+        <form onsubmit="submitHandler(event)">
+            <div>
+                <label for="dateField"> Date </label>
+                <input type="date" name="selectDate" min="" id="dateField"/>
+            </div>
+            <div>
+                <label for="timeField"> Time </label>
+                <input type="time" name="selectTime" id="timeField" min=""/>
+            </div>
+            <div>
+                <label for="taskField"> Task </label>
+                <div id="taskField" contenteditable="true" rows="4" cols="50"></div>
+                <button type="button" style="display: none;" id="highlightBtn" onclick="highlightText()">Highlight Text</button>
+            </div>
+            <button type="submit" id="submitBtn">Submit</button>
+            <button id="updateBtn" style="display: none;" onclick="updateEntry()">Update</button>
+        </form>
+    </div>
+</div>
+
+<table id="tbl">
+    <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Task</th>
+        <th>Status</th>
+        <th>Update Status</th>
+        <th>Edit Entry</th>
+        <th>Delete Entry</th>
+    </tr>
+</table>
+
+<script src="app.js" defer></script>
+</body>
+</html>
